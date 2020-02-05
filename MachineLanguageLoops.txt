@@ -1,0 +1,11 @@
+#Name: Vraj Patel
+#Email: vraj.patel24@myhunter.cuny.edu
+#Date: November 12, 2019
+
+ADDI $s0, $zero, 2
+ADDI $s1, $zero, 2
+ADDI $s3, $zero, 20
+AGAIN: ADD $s0, $s0, $s1
+BEQ $s0, $s3, DONE
+J AGAIN
+DONE:  #To break out of the loop
